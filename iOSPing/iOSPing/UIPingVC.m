@@ -50,6 +50,7 @@ static NSString * DisplayAddressForAddress(NSData * address)
         [self.sendTimer invalidate];
         [self.remote setEnabled:YES];
         self.sendTimer = nil;
+        self.pinger    = nil;
     } else {
         button.tag = 1;
         [button setTitle:@"Stop" forState:UIControlStateNormal];
